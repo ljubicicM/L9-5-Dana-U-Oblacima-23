@@ -51,7 +51,7 @@ public class PlayerService {
 	            float STL = Float.parseFloat(tempArr[11]);
 	            float TOV = Float.parseFloat(tempArr[12]);
 	            if(indexIgraca!=-1) { 
-	            	list.get(0).AddStats(FTM,FTA,TwoPM,TwoPA,
+	            	list.get(indexIgraca).AddStats(FTM,FTA,TwoPM,TwoPA,
 	            			ThreePM,ThreePA,REB,BLK,AST,STL,TOV);
 	            }else {
 	            	addPlayer(new Player(tempName[0],tempName[1],
