@@ -24,7 +24,7 @@ public class PlayerController {
 	
 	@GetMapping("/players/stats/{id}")
 	@ResponseBody
-	public String getEmployeesById(@PathVariable String id) {
+	public String getPlayerById(@PathVariable String id) {
 		return playerService.returnPlayer(id).toString();
 	}
 }
