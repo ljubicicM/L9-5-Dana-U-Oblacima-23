@@ -9,8 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class PlayerService {
 	private ArrayList<Player> list;
-	private String prefix = "/L9Project/src/main/resources/";
-	private String fileCSV = "L9HomeworkChellangePlayersInput.csv"  //input file
+
 	public PlayerService(ArrayList<Player> list) {
 		super();
 		this.list = list;
@@ -29,7 +28,7 @@ public class PlayerService {
 	public void loadPlayers() {
 		String delimiter = ",";
 	    try {
-	         File file = new File(prefix+fileCSV);
+	         File file = new File("src/main/resources/L9HomeworkChallengePlayersInput.csv");
 	         FileReader fr = new FileReader(file);
 	         BufferedReader br = new BufferedReader(fr);
 	         String line = "";
