@@ -83,9 +83,9 @@ public class Player {
 		PTS = FTM + 2*TwoPM + 3*ThreePM;
 		VAL = (FTM + 2*TwoPM + 3*ThreePM + REB + BLK + AST + STL) - 
 				(FTA-FTM + TwoPA-TwoPM + ThreePA-ThreePM + TOV);
-		EFGProcentage = (TwoPM + ThreePM + (1/2) * ThreePM) / (TwoPA + ThreePA) * 100;
-		TSPRocentage = PTS / (2 * (TwoPA + ThreePA + (19/40) * FTA)) * 100;
-		HASTProcentage = AST / (TwoPA + ThreePA + (19/40) * FTA + AST + TOV) * 100;
+		EFGProcentage = (TwoPM + ThreePM + 0.5f * ThreePM) / (TwoPA + ThreePA) * 100;
+		TSPRocentage = PTS / (2 * (TwoPA + ThreePA + 0.475f * FTA)) * 100;
+		HASTProcentage = AST / (TwoPA + ThreePA + 0.475f * FTA + AST + TOV) * 100;
 	}
 	
 	public String getName() {
