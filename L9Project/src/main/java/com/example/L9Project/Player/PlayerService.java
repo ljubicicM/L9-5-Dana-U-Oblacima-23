@@ -29,7 +29,7 @@ public class PlayerService {
 	public void loadPlayers() {
 		String delimiter = ",";
 	    try {
-	         File file = new File("src/main/resources/L9HomeworkChallengePlayersInput.csv");
+	         File file = new File(prefix+fileCSV);
 	         FileReader fr = new FileReader(file);
 	         BufferedReader br = new BufferedReader(fr);
 	         String line = "";
