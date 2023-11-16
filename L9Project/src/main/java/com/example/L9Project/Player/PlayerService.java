@@ -25,6 +25,7 @@ public class PlayerService {
 	public void addPlayer(Player player) {
 		list.add(player);
 	}
+	
 	public void loadPlayers() {
 		String delimiter = ",";
 	    try {
@@ -53,7 +54,7 @@ public class PlayerService {
 	            if(indexIgraca!=-1) { 
 	            	list.get(indexIgraca).AddStats(FTM,FTA,TwoPM,TwoPA,
 	            			ThreePM,ThreePA,REB,BLK,AST,STL,TOV);
-	            }else {
+	            } else {
 	            	addPlayer(new Player(tempName[0],tempName[1],
 	            			pos,FTM,FTA,TwoPM,TwoPA,ThreePM,ThreePA,
 	            			REB,BLK,AST,STL,TOV));
@@ -79,6 +80,7 @@ public class PlayerService {
 			list.get(i).calculatePlayer();
 		}
 	}
+	
 	@Autowired
 	public Player returnPlayer(String fullName) {
 		for(int i=0;i<list.size();i++) {
