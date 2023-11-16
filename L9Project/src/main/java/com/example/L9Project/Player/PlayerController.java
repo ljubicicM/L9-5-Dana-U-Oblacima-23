@@ -14,7 +14,7 @@ public class PlayerController {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(PlayerController.class, args);
-		}
+	}
 	
 	private final PlayerService playerService;
 	
