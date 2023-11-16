@@ -64,6 +64,7 @@ public class Player {
 		
 		gamesPlayed++;
 	}
+	
 	public void calculatePlayer() {
 		FTM /= gamesPlayed;
 		FTA /= gamesPlayed;
@@ -91,26 +92,14 @@ public class Player {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public String getLastName() {
 		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
 	}
 
 	public int getGamesPlayed() {
 		return gamesPlayed;
 	}
 
-	public void setGamesPlayed(int gamesPlayed) {
-		this.gamesPlayed = gamesPlayed;
-	}
-	//Popraviti toString da bude isti kao u zadatku
 	@Override
 	public String toString() {
 		return "{\n"
