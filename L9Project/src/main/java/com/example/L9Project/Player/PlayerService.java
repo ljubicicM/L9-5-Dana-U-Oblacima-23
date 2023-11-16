@@ -9,7 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class PlayerService {
 	private ArrayList<Player> list;
-
+	private String prefix = "/L9Project/src/main/resources/";
+	private String fileCSV = "L9HomeworkChellangePlayersInput.csv"  //input file
 	public PlayerService(ArrayList<Player> list) {
 		super();
 		this.list = list;
